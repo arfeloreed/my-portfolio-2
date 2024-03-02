@@ -1,0 +1,38 @@
+.page {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+
+  .tags {
+    font-size: 25px;
+    position: absolute;
+    color: $primary-color;
+    bottom: 0;
+    left: 120px;
+    font-family: $bg-font;
+    opacity: 0.6;
+  }
+
+  .top-tags {
+    bottom: auto;
+    top: 35px;
+  }
+
+  .bottom-tag-html {
+    margin-left: -20px;
+  }
+}
+
+.container {
+  border: 1px solid white;
+  width: 100%;
+  will-change: contents;
+  height: 90%;
+  min-height: 566px;
+  position: absolute;
+  top: 5%;
+  z-index: 1;
+  opacity: 0;
+  transform-style: preserve-3d;
+  animation: fadeIn 1s 0.6s forwards;
+}

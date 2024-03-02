@@ -1,0 +1,112 @@
+.navbar {
+  background-color: #181818;
+  width: 80px;
+  height: 100vh;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+
+  .logo {
+    display: block;
+
+    img {
+      display: block;
+      width: 50px;
+      border-radius: 7px;
+    }
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      font-size: 25px;
+      color: $icon-color;
+      margin: 8px 0;
+      text-decoration: none;
+      position: relative;
+
+      svg {
+        transition: all 0.3s ease-out;
+      }
+
+      &.active {
+        svg {
+          color: $primary-color;
+        }
+      }
+
+      &::after {
+        content: "";
+        font-size: 9px;
+        color: $primary-color;
+        letter-spacing: 2px;
+        width: 100%;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 25%;
+        text-align: center;
+        opacity: 0;
+        transition: all 0.3s ease-out;
+      }
+
+      &:first-child {
+        &::after {
+          content: "HOME";
+        }
+      }
+
+      &:nth-child(2) {
+        &::after {
+          content: "ABOUT";
+          margin-left: -4px;
+        }
+      }
+
+      &:last-child {
+        &::after {
+          content: "WORK";
+        }
+      }
+
+      &:hover {
+        svg {
+          opacity: 0;
+        }
+
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      margin: 7px 0;
+
+      a {
+        font-size: 20px;
+        color: $icon-color;
+
+        svg {
+          transition: all 0.3s ease-out;
+        }
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
