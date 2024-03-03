@@ -1,8 +1,11 @@
 @import "animate.css";
+@import "loaders.css/src/animations/pacman.scss";
 @import "_variables";
 @import "_sidebar";
 @import "_layout";
 @import "_home";
+@import "_about";
+@import "_work";
 
 * {
   box-sizing: border-box;
@@ -16,6 +19,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: $bg-color;
   color: $font-color;
-  overflow: hidden;
   position: relative;
+}
+
+.loader-hidden {
+  display: none;
+}
+.loader-active {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  animation: fadeOut 1s 0.7s forwards;
 }
