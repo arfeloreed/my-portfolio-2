@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHouse, faUser, faSuitcase } from "@fortawesome/free-solid-svg-icons";
+import { faHouse, faUser, faSuitcase, faBars } from "@fortawesome/free-solid-svg-icons";
 import {
   faInstagram,
   faXTwitter,
@@ -56,6 +56,8 @@ function Sidebar() {
           </a>
         </li>
       </ul>
+
+      <FontAwesomeIcon icon={faBars} size="2x" className="hamburger-icon" />
     </div>
   );
 }
