@@ -71,7 +71,7 @@
   }
 
   .images-con {
-    width: 500px;
+    width: 450px;
     height: 650px;
     position: absolute;
     right: 150px;
@@ -101,6 +101,100 @@
       -moz-box-shadow: $shadow-1;
       box-shadow: $shadow-1;
       animation: jackInTheBox 2s 1s backwards;
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .home-page {
+    .text-zone {
+      h1 {
+        font-size: 58px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+    }
+    .images-con {
+      width: 400px;
+      height: 600px;
+
+      .brand-con {
+        img {
+          width: 150px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .home-page {
+    .text-zone {
+      width: 90%;
+      z-index: 2;
+
+      h2 {
+        color: #fff;
+      }
+    }
+
+    .images-con {
+      top: 170px;
+
+      &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.5;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .home-page {
+    .text-zone {
+      left: 10px;
+      top: 60%;
+
+      h1 {
+        font-size: 48px;
+      }
+
+      h2 {
+        font-size: 16px;
+      }
+    }
+
+    .images-con {
+      transform: translateX(250px);
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .home-page {
+    .text-zone {
+      h1 {
+        font-size: 32px;
+      }
+    }
+
+    .images-con {
+      transform: translateX(310px);
+      height: 450px;
+
+      .brand-con {
+        img {
+          width: 100px;
+        }
+      }
     }
   }
 }

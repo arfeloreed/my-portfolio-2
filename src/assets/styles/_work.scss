@@ -114,3 +114,28 @@
     }
   }
 }
+
+@media (max-width: 900px) {
+  .work-page {
+    .heading-con {
+      top: 150px;
+      left: 80px;
+
+      h1 {
+        font-size: 38px;
+      }
+    }
+
+    .projects-con {
+      top: 250px;
+
+      .card {
+        z-index: 5;
+
+        &:nth-of-type(5) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
