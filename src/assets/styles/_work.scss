@@ -44,10 +44,9 @@
 
   .projects-con {
     position: absolute;
-    display: block;
-    width: 90%;
+    width: 70%;
     top: 22%;
-    left: 50% - 43%;
+    left: 50% - 33%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -77,6 +76,9 @@
       }
       &:nth-of-type(5) {
         animation-delay: 2s;
+      }
+      &:nth-of-type(6) {
+        animation-delay: 2.2s;
       }
 
       .card-image {
@@ -132,7 +134,7 @@
       .card {
         z-index: 5;
 
-        &:nth-of-type(5) {
+        &:nth-of-type(6) {
           margin-bottom: 20px;
         }
       }
